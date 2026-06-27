@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Strength Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Password Strength Analyzer</h1>
+
+<div class="password-box">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<button id="togglePassword">Show</button>
+
+</div>
+
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+<h2 id="strength">Strength: Weak</h2>
+
+<p id="score">Score: 0/100</p>
+
+<p id="entropy">Entropy: 0 bits</p>
+
+<ul class="checklist">
+
+<li id="length">❌ Minimum 8 Characters</li>
+
+<li id="upper">❌ Uppercase Letter</li>
+
+<li id="lower">❌ Lowercase Letter</li>
+
+<li id="number">❌ Number</li>
+
+<li id="special">❌ Special Character</li>
+
+</ul>
+
+<div class="buttons">
+
+<button id="generate">Generate Secure Password</button>
+
+<button id="copy">Copy Password</button>
+
+</div>
+
+<p id="suggestion"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
